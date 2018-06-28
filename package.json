@@ -1,16 +1,43 @@
 {
-  "name": "task-reminder-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "task-reminder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=development webpack-dev-server --mode development --hot",
+    "build": "NODE_ENV=production webpack --mode production",
+    "dev": "webpack --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptengo/taskReminder.git"
+  },
+  "keywords": [],
+  "author": "VictorPuigcerver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ptengo/taskReminder/issues"
+  },
+  "homepage": "https://github.com/ptengo/taskReminder#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "react-hot-loader": "^4.3.3",
+    "sw-precache-webpack-plugin": "^0.11.5",
+    "webpack": "^4.12.2",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-manifest-plugin": "^2.0.3"
+  },
   "dependencies": {
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "webpack-merge": "^4.1.3"
   }
 }

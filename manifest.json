@@ -1,0 +1,10 @@
+{
+  "short_name": "Reminder PWA",
+  "name": "Reminder PWA",
+  "icons": [
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}
